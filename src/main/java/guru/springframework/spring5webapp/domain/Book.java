@@ -18,10 +18,9 @@ public class Book {
             inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authors;
 
-    public Book(String title, String isnd, Set<Author> authors) {
+    public Book(String title, String isnd) {
         this.title = title;
         this.isnd = isnd;
-        this.authors = authors;
     }
 
     public Book() {
